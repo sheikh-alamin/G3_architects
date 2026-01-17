@@ -8,7 +8,7 @@
   font-optical-sizing: auto;
 }
 
-header {
+.nav_link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,4 +285,110 @@ footer p {
     font-size: 16px;
     font-weight: 600;
     color: #727272;
+}
+
+/* Responsive media querry */
+
+@media screen and (max-width:576px) {
+    .nav_link .navbar {
+        flex-direction: column;
+    }
+    nav {
+        padding-bottom: 10px;
+    }
+    .menu {
+        display: block;
+    }
+    .menu li {
+        margin-left: 50px;
+    }
+
+    .dts h2 {
+        padding-top: 0px;
+        font-size: 50px;
+    }
+    .feature_images {
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .features {
+        display: block;
+        padding: 0;
+    }
+    .feature_details {
+        text-align: center;
+    }
+    .experience {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    }
+    .experience_container {
+        max-width: 100%;
+        text-align: center;
+    }
+    .experience_details {
+        max-width: 100%;
+        align-content: center;
+    }
+    .experience .heading {
+        text-align: center;
+        max-width: 100%;
+    }
+    .experience .heading h3 {
+    font-size: 25px;
+    font-weight: bold;
+}
+    .experience_image {
+    max-width: 100%;
+}
+    .experience_image img {
+    box-shadow: 0px 4px 4px 0px #72727240;
+    width: 100%;
+    }
+    .experience_image .btn {
+        margin-top: 15px;
+        margin-left: 60px;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 8px;
+        background-color: #FF900E;
+        border: none;
+        font-size: 18px;
+    }
+    #fact_container {
+    padding: 0;
+    }
+    .fact_details {
+        margin-left: 10px;
+        text-align: center;
+    }
+    .fact_details p {
+        margin-top: 5px;
+    }
+    .fact_design {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+    margin-top: 10px;
+    gap: 10px;
+}
+#sponsors {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0px;
+}
+.sponsor_logo {
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 70%;
+}
+.sponsor_logo img {
+    margin-bottom: 20px;
+}
+footer {
+    padding: 10px 30px;
+}
 }
